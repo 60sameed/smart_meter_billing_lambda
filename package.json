@@ -1,0 +1,26 @@
+{
+  "name": "smart_meter_billing_lambda",
+  "version": "1.0.0",
+  "description": "Smart meter billing lambda.",
+  "main": "lambda_meter.js",
+  "scripts": {
+    "start": "node lambda_meter.js",
+    "test": "mocha"
+  },
+  "type": "module",
+  "author": "Muhammad Sameed Baig",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.489.0",
+    "@aws-sdk/lib-dynamodb": "^3.489.0",
+    "@aws-sdk/util-retry": "^3.374.0",
+    "moment-timezone": "^0.5.44"
+  },
+  "devDependencies": {
+    "aws-sdk-client-mock": "^3.0.1",
+    "chai": "^5.0.0",
+    "dotenv": "^16.3.1",
+    "mocha": "^10.2.0",
+    "rewire": "^7.0.0"
+  }
+}
