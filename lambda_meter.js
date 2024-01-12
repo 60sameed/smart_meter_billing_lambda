@@ -46,8 +46,7 @@ async function queryRecords (TableName, ProjectionExpression, KeyConditionExpres
 async function putRecord (TableName, Item, ReturnValues) {
     const input = clean({TableName, Item, ReturnValues});
     const command = new PutCommand(input);
-    const result = await docClient.send(command);
-    return result;
+    return await docClient.send(command);
 }
 
 async function processEvent (event) {
